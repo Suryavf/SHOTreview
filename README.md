@@ -22,4 +22,4 @@ make
 ```console
 ../bin/SHOT
 ```
-[![Watch the video]](https://youtu.be/uKc07AzNMa0)
+[![Watch the video](https://i.imgur.com/pLNcP0I.png)](https://youtu.be/uKc07AzNMa0)
