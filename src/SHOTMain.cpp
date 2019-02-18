@@ -21,7 +21,7 @@
 #include <fstream>
 
 std::string original = "../data/gata001_768.ply";
-std::string scene    = original; // "/media/victor/Datos/mesh/gata001_768.ply";
+std::string scene    = original; 
 
 struct CmdLineParams
 {
@@ -291,12 +291,11 @@ int main(int argc, char** argv)
 	//vtkSmartPointer<vtkPLYReader> reader2 = vtkSmartPointer<vtkPLYReader>::New();
 	//reader2->SetFileName ( scene.c_str() );
 	
-	
 	vtkSmartPointer<vtkPolyDataPointSampler> reader2 = vtkSmartPointer<vtkPolyDataPointSampler>::New();
 	reader2->SetInputData(meshScene);
 
 	vtkSmartPointer<vtkTransform> translation = vtkSmartPointer<vtkTransform>::New();
-	translation->Translate(0.00, 0.00, 0.0);//(0.50, 0.00, 0.0);
+	translation->Translate(0.50, 0.00, 0.0);//(0.50, 0.00, 0.0);
 
 	vtkSmartPointer<vtkTransformPolyDataFilter> transformFilter = vtkSmartPointer<vtkTransformPolyDataFilter>::New();
 	transformFilter->SetInputConnection(reader2->GetOutputPort());
@@ -332,7 +331,7 @@ int main(int argc, char** argv)
 	vtkSmartPointer<vtkActor         >   actorPoint;
 
 	vtkSmartPointer<vtkTransformPolyDataFilter> transScenePoints;
-
+	
 	float r,g,b;
 	for (size_t i = 0; i< keyPointOriginal.size();++i){
 		r = ((float) rand() / (RAND_MAX));
