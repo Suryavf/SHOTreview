@@ -20,8 +20,8 @@
 #include "opencv2/opencv.hpp"
 #include <fstream>
 
-std::string original = "/media/victor/Datos/mesh/gata001_768.ply";
-std::string scene    = "/media/victor/Datos/mesh/gata001_768.ply";
+std::string original = "../data/gata001_768.ply";
+std::string scene    = original; // "/media/victor/Datos/mesh/gata001_768.ply";
 
 struct CmdLineParams
 {
