@@ -22,4 +22,6 @@ make
 ```console
 ../bin/SHOT
 ```
+
+Click on the image to see the test video:
 [![Watch the video](https://i.imgur.com/pLNcP0I.png)](https://youtu.be/uKc07AzNMa0)
